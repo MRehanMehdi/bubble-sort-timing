@@ -13,8 +13,8 @@ The project is part of a major assignment that analyzes how the execution time c
   ```bash
   g++ "bubblesort+time.cpp" -o bubblesort_time
 
-Run the executable:
- ./bubblesort_time
+- Run the executable: `./bubblesort_time`
+
 
 ## Purpose
 The goal is to:
