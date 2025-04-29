@@ -1,23 +1,27 @@
-# Bubble Sort - Empirical Analysis
+# Sorting Algorithms vs Time
 
-## Overview
-This repository contains the C++ implementation of **Bubble Sort** used for empirical analysis of time complexity.  
-The project is part of a major assignment that analyzes how the execution time changes with different input sizes.
+This project is part of the **Analysis of Algorithm** course assignment. It empirically analyzes the time complexity of four sorting algorithms—**Bubble Sort**, **Selection Sort**, **Insertion Sort**, and **Merge Sort**—by measuring their execution time on different input sizes.
 
----
+## 📄 File Name
+**sortingAlgorithms vs time.cpp**
 
-## How to Run
-- Download or clone this repository.
-- Open the `bubblesort+time.cpp` file in any C++ IDE or editor (like Visual Studio, CodeBlocks, etc.).
-- Compile the code using a C++ compiler:
-  ```bash
-  g++ "bubblesort+time.cpp" -o bubblesort_time
+## 🧪 Sorting Algorithms Implemented
+- Bubble Sort
+- Selection Sort
+- Insertion Sort
+- Merge Sort
 
-- Run the executable: `./bubblesort_time`
+Each sorting algorithm is tested on these arrays with five runs per input size. The **average execution time** is calculated and printed in microseconds.
 
+## 🕒 Time Measurement
+The program uses C++'s `chrono` library (`high_resolution_clock`) to record precise execution times for each sorting algorithm.
 
-## Purpose
-The goal is to:
-- Measure the execution time of Bubble Sort for different input sizes.
-- Plot a graph showing time vs. input size.
-- Compare the observed results with the theoretical time complexity **O(n²)**.
+## ✅ How to Run
+
+### Prerequisites
+- A C++ compiler (e.g., g++, clang++)
+- Any modern C++ IDE or command-line environment
+
+### Compilation (using g++)
+```bash
+g++ "sortingAlgorithms vs time.cpp" -o sortAnalysis
